@@ -32,32 +32,10 @@ public class Pessoa implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(name = "id")
     private Long id;
-    @Basic(optional = false)
-    @Column(name = "nome")
     private String nome;
-    @Basic(optional = false)
-    @Column(name = "email")
-    private String email;
-    @Basic(optional = false)
-    @Column(name = "password")
+    private String email;  
     private String password;
-
-    public Pessoa() {
-    }
-
-    public Pessoa(Long id) {
-        this.id = id;
-    }
-
-    public Pessoa(Long id, String nome, String email, String password) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.password = password;
-    }
 
     public Long getId() {
         return id;

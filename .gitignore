@@ -4,3 +4,4 @@ Projecto/build/built-jar.properties
 Projecto/nbproject/project.properties
 *.java
 *.properties
+/Projecto/dist/
